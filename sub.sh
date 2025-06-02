@@ -1,4 +1,3 @@
-  GNU nano 8.4                                                                                                                                                                              sub.sh                                                                                                                                                                                        
 #!/bin/bash
 
 # Define input file
