@@ -1,50 +1,49 @@
 #!/bin/bash
 
-# Define input file
-INPUT_FILE="sub.txt"
-OUTPUT_FILE="subzy_results.txt"
-DIG_RESULTS_FILE="dig_results.txt"
-FINAL_RESULTS="final_results.txt"
+INPUT="sub.txt"
+HTTP_404="http_404_subs.txt"
+SUBZY_OUTPUT="subzy_raw.txt"
+VULNERABLE_SUBS="confirmed_takeovers.txt"
+FINGERPRINTS_JSON="fingerprints.json"  # downloaded from shifa123 repo
 
-# Check if Subzy is installed
-if ! command -v subzy &> /dev/null; then
-    echo "Subzy is not installed. Please install it first."
+# Check required tools
+for tool in subzy curl jq; do
+  if ! command -v $tool &> /dev/null; then
+    echo "$tool not installed. Please install it first."
     exit 1
-fi
+  fi
+done
 
-# Check if dig is installed
-if ! command -v dig &> /dev/null; then
-    echo "dig is not installed. Please install it first."
-    exit 1
-fi
+echo "[*] Step 1: Checking 404 status subdomains..."
+> "$HTTP_404"
+while read -r sub; do
+  status=$(curl -s -o /dev/null -w "%{http_code}" -I "https://$sub")
+  if [[ "$status" == "404" ]]; then
+    echo "$sub" >> "$HTTP_404"
+  fi
+done < "$INPUT"
 
-# Run Subzy and save results
-echo "Running Subzy on targets..."
-subzy run --targets "$INPUT_FILE" --hide_fails > "$OUTPUT_FILE"
+echo "[*] Step 2: Running Subzy on 404 subdomains..."
+subzy run --targets "$HTTP_404" --hide_fails > "$SUBZY_OUTPUT"
 
-# Extract vulnerable subdomains from Subzy output
-awk '/\[ VULNERABLE \]/{print $5}' "$OUTPUT_FILE" > subzy_vulnerable.txt
-
-# Run dig for each subdomain
-echo "Running dig for each subdomain..."
-> "$DIG_RESULTS_FILE"
-while read -r subdomain; do
-    echo "Checking $subdomain with dig..."
-    dig "$subdomain" +short >> "$DIG_RESULTS_FILE"
-    echo "$subdomain : $(dig "$subdomain" +short)" >> "$DIG_RESULTS_FILE"
-done < "$INPUT_FILE"
-
-# Compare Subzy and dig results
-echo "Comparing Subzy and dig results..."
-> "$FINAL_RESULTS"
-while read -r subdomain; do
-    if grep -q "$subdomain" subzy_vulnerable.txt && grep -q "$subdomain" "$DIG_RESULTS_FILE"; then
-        echo -e "\033[31m[VULNERABLE] $subdomain (highlighted in red)\033[0m" >> "$FINAL_RESULTS"
-    else
-        echo "[NOT VULNERABLE] $subdomain" >> "$FINAL_RESULTS"
+echo "[*] Step 3: Checking for unclaimed fingerprints..."
+> "$VULNERABLE_SUBS"
+while read -r line; do
+  # Match only VULNERABLE lines
+  if [[ "$line" == *"[ VULNERABLE ]"* ]]; then
+    sub=$(echo "$line" | awk '{print $5}')
+    provider=$(echo "$line" | grep -oP '\[ \K[^]]+(?= \])$')
+    
+    # Now get full curl content to match fingerprint
+    html=$(curl -sL "https://$sub")
+    
+    # Search fingerprint match from shifa123 repo
+    matched=$(jq -r ".fingerprints[] | select(.service==\"$provider\") | .indicators[] | select(.!=null) | select(. | test(\"$html\"; \"i\"))" "$FINGERPRINTS_JSON")
+    
+    if [[ ! -z "$matched" ]]; then
+      echo "[✔] $sub is vulnerable ($provider)" | tee -a "$VULNERABLE_SUBS"
     fi
-done < "$INPUT_FILE"
+  fi
+done < "$SUBZY_OUTPUT"
 
-# Display final results
-echo "Final results are saved in $FINAL_RESULTS"
-cat "$FINAL_RESULTS"
+echo "✅ Done! Confirmed takeovers are saved in $VULNERABLE_SUBS"
