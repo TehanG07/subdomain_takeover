@@ -3,7 +3,10 @@ Subdomain Takeover Tool This tool helps in identifying and exploiting potential 
 
 # sudo apt update && sudo apt install -y jq
 
-#Required tools
+# Required tools
+
 subfinder
+
 httpx
+
 dnsx
