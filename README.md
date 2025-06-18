@@ -3,4 +3,3 @@ Subdomain Takeover Tool This tool helps in identifying and exploiting potential 
 
 # sudo apt update && sudo apt install -y jq
 
-# wget https://raw.githubusercontent.com/EdOverflow/can-i-take-over-xyz/master/fingerprints.json
