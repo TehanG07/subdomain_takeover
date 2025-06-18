@@ -7,6 +7,4 @@ Subdomain Takeover Tool This tool helps in identifying and exploiting potential 
 
 subfinder
 
-httpx
-
 dnsx
