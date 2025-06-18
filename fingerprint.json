@@ -1,0 +1,592 @@
+[
+  {
+    "service": "Acquia",
+    "status": "Not Vulnerable",
+    "fingerprint": [
+      "Web Site Not Found",
+      "If you are an Acquia Cloud customer and expect to see your site at this address"
+    ]
+  },
+  {
+    "service": "Aftership",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Oops.</h2><p class=\"text-muted text-tight\">The page you're looking for doesn't exist."
+    ]
+  },
+  {
+    "service": "Agile CRM",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Sorry, this page is no longer available."
+    ]
+  },
+  {
+    "service": "Aha",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "There is no portal here ... sending you back to Aha!"
+    ]
+  },
+  {
+    "service": "Airee.ru",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Ошибка 402. Сервис  Айри.рф  не  оплачен"
+    ]
+  },
+  {
+    "service": "Anima",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "If this is your website and you've just created it, try refreshing in a minute"
+    ]
+  },
+  {
+    "service": "Akamai",
+    "status": "Not Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "AWS/S3",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "The specified bucket does not exist"
+    ]
+  },
+  {
+    "service": "Bigcartel",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "<h1>Oops! We couldn&#8217;t find that page.</h1>"
+    ]
+  },
+  {
+    "service": "Bitbucket",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Repository not found",
+      "The page you have requested does not exist"
+    ]
+  },
+  {
+    "service": "Brightcove",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "<p class=\"bc-gallery-error-code\">Error Code: 404</p>"
+    ]
+  },
+  {
+    "service": "Campaign Monitor",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Trying to access your account?",
+      "<strong>Trying to access your account?</strong>"
+    ]
+  },
+  {
+    "service": "Canny",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Trying to access your account?",
+      "Company Not Found"
+    ]
+  },
+  {
+    "service": "Cargo",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "If you're moving your domain away from Cargo you must make this configuration through your registrar's DNS control panel."
+    ]
+  },
+  {
+    "service": "Cargo Collective",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "404 Not Found",
+      "<div class=\"notfound\">"
+    ]
+  },
+  {
+    "service": "Cloudfront",
+    "status": "Not Vulnerable",
+    "fingerprint": [
+      "ViewerCertificateException"
+    ]
+  },
+  {
+    "service": "Desk",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Please try again or try Desk.com free for 14 days.",
+      "this help center no longer exists"
+    ]
+  },
+  {
+    "service": "Digital Ocean",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Domain uses DO name serves with no records in DO."
+    ]
+  },
+  {
+    "service": "Discourse",
+    "status": "Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "Fastly",
+    "status": "Edge case",
+    "fingerprint": [
+      "Fastly error: unknown domain:"
+    ]
+  },
+  {
+    "service": "Feedpress",
+    "status": "Not Vulnerable",
+    "fingerprint": [
+      "The feed has not been found."
+    ]
+  },
+  {
+    "service": "Firebase",
+    "status": "Not Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "Fly.io",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "404 Not Found"
+    ]
+  },
+  {
+    "service": "Freshdesk",
+    "status": "Not Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "Frontify",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "404 - Page Not Found",
+      "Oops… looks like you got lost"
+    ]
+  },
+  {
+    "service": "Gemfury",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "404: This page could not be found."
+    ]
+  },
+  {
+    "service": "Ghost",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "The thing you were looking for is no longer here, or never was",
+      "The thing you were looking for is no longer here"
+    ]
+  },
+  {
+    "service": "Github",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "There isn't a Github Pages site here.",
+      "There isn't a GitHub Pages site here."
+    ]
+  },
+  {
+    "service": "Gitlab",
+    "status": "Not Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "Google Cloud Storage",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "NoSuchBucket",
+      "The specified bucket does not exist."
+    ]
+  },
+  {
+    "service": "Google Cloud Storage",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "NoSuchBucket",
+      "The specified bucket does not exist."
+    ]
+  },
+  {
+    "service": "Getresponse",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "With GetResponse Landing Pages, lead generation has never been easier"
+    ]
+  },
+  {
+    "service": "HatenaBlog",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "404 Blog is not found"
+    ]
+  },
+  {
+    "service": "Help Juice",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "We could not find what you're looking for."
+    ]
+  },
+  {
+    "service": "Help Scout",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "No settings were found for this company:"
+    ]
+  },
+  {
+    "service": "Heroku",
+    "status": "Edge Case",
+    "fingerprint": [
+      "No such app",
+      "There's nothing here, yet."
+    ]
+  },
+  {
+    "service": "Helprace",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Alias not configured!"
+    ]
+  },
+  {
+    "service": "Hubspot",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Domain not found"
+    ]
+  },
+  {
+    "service": "Instapage",
+    "status": "Not Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "Intercom",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Uh oh. That page doesn't exist.",
+      "This page is reserved for artistic dogs."
+    ]
+  },
+  {
+    "service": "JetBrains",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "is not a registered InCloud YouTrack"
+    ]
+  },
+  {
+    "service": "Jazzhr",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "This account no longer active"
+    ]
+  },
+  {
+    "service": "Key CDN",
+    "status": "Not Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "Kinsta",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "No Site For Domain"
+    ]
+  },
+  {
+    "service": "LaunchRock",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "It looks like you may have taken a wrong turn somewhere. Don't worry...it happens to all of us."
+    ]
+  },
+  {
+    "service": "Landingi",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "It looks like you're lost"
+    ]
+  },
+  {
+    "service": "Mashery",
+    "status": "Edge Case",
+    "fingerprint": [
+      "Unrecognized domain",
+      "Unrecognized domain <strong>"
+    ]
+  },
+  {
+    "service": "Microsoft Azure",
+    "status": "Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "Netlify",
+    "status": "Edge Case",
+    "fingerprint": [
+      "Not Found"
+    ]
+  },
+  {
+    "service": "Ngrok",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Tunnel *.ngrok.io not found",
+      "ngrok.io not found"
+    ]
+  },
+  {
+    "service": "Pantheon",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "404 error unknown site!",
+      "The gods are wise, but do not know of the site which you seek."
+    ]
+  },
+  {
+    "service": "Pingdom",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "This public report page has not been activated by the user",
+      "Public Report Not Activated"
+    ]
+  },
+  {
+    "service": "Proposify",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "If you need immediate assistance, please contact <a href=\"mailto:support@proposify.biz"
+    ]
+  },
+  {
+    "service": "Readme.io",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Project doesnt exist... yet!"
+    ]
+  },
+  {
+    "service": "Readthedocs",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "unknown to Read the Docs"
+    ]
+  },
+  {
+    "service": "Sendgrid",
+    "status": "Not Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "Shopify",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Sorry, this shop is currently unavailable.",
+      "Only one step left!"
+    ]
+  },
+  {
+    "service": "SmartJobBoard",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "This job board website is either expired or its domain name is invalid.",
+      "Job Board Is Unavailable"
+    ]
+  },
+  {
+    "service": "Squarespace",
+    "status": "Not Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "Statuspage",
+    "status": "Not Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "Strikingly",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "page not found",
+      "But if you're looking to build your own website"
+    ]
+  },
+  {
+    "service": "Surge.sh",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "project not found"
+    ]
+  },
+  {
+    "service": "Simplebooklet",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "We can't find this <a href=\"https://simplebooklet.com"
+    ]
+  },
+  {
+    "service": "Smartling",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Domain is not configured"
+    ]
+  },
+  {
+    "service": "Smugmug",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "{\"text\":\"Page Not Found\""
+    ]
+  },
+  {
+    "service": "Surveygizmo",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "data-html-name"
+    ]
+  },
+  {
+    "service": "Tave",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "<h1>Error 404: Page Not Found</h1>"
+    ]
+  },
+  {
+    "service": "Teamwork",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Oops - We didn't find your site."
+    ]
+  },
+  {
+    "service": "Tictail",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Building a brand of your own?"
+    ]
+  },
+  {
+    "service": "Tumblr",
+    "status": "Edge Case",
+    "fingerprint": [
+      "Whatever you were looking for doesn't currently exist at this address",
+      "There's nothing here."
+    ]
+  },
+  {
+    "service": "Tilda",
+    "status": "Edge Case",
+    "fingerprint": [
+      "Please renew your subscription",
+      "<title>Please renew your subscription</title>"
+    ]
+  },
+  {
+    "service": "Uberflip",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Non-hub domain, The URL you've accessed does not provide a hub."
+    ]
+  },
+  {
+    "service": "Unbounce",
+    "status": "Edge Case",
+    "fingerprint": [
+      "The requested URL was not found on this server."
+    ]
+  },
+  {
+    "service": "Uptimerobot",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "page not found"
+    ]
+  },
+  {
+    "service": "UserVoice",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "This UserVoice subdomain is currently available!"
+    ]
+  },
+  {
+    "service": "Vercel",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "The deployment could not be found on Vercel."
+    ]
+  },
+  {
+    "service": "Vend",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Looks like you've traveled too far into cyberspace."
+    ]
+  },
+  {
+    "service": "Webflow",
+    "status": "Edge Case",
+    "fingerprint": [
+      "The page you are looking for doesn't exist or has been moved.",
+      "<p class=\"description\">The page you are looking for doesn't exist or has been moved.</p>"
+    ]
+  },
+  {
+    "service": "Wishpond",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "https://www.wishpond.com/404?campaign=true"
+    ]
+  },
+  {
+    "service": "Wufoo",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Profile not found"
+    ]
+  },
+  {
+    "service": "Wordpress",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Do you want to register *.wordpress.com?",
+      "Do you want to register"
+    ]
+  },
+  {
+    "service": "Worksites",
+    "status": "Vulnerable",
+    "fingerprint": [
+      "Hello! Sorry, but the website you’re looking for doesn’t exist.",
+      "Company Not Found",
+      "you’re looking for doesn’t exist"
+    ]
+  },
+  {
+    "service": "WP Engine",
+    "status": "Not Vulnerable",
+    "fingerprint": []
+  },
+  {
+    "service": "Zendesk",
+    "status": "Not Vulnerable",
+    "fingerprint": [
+      "Help Center Closed"
+    ]
+  }
+]
